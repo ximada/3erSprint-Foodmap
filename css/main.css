@@ -1,0 +1,54 @@
+body {
+	font-family: 'Jura', sans-serif;
+}
+
+#view1 {
+	background-color: #2B2B2B;
+	height: 100vh;
+	width: 100%;
+
+
+}
+.title1 {
+	color: #ffc107;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 60px;
+	margin-top: 50%;
+}
+.section-resturant{
+	background-color: #2B2B2B;
+	height: 100vh;
+	
+}
+.fa-search {
+	color: #000;
+}
+.title2 {
+	color: #ffc107;
+	text-align: center;
+	padding-left: 70%;
+
+}
+
+.title3 {
+	color: #ffc107;
+	text-align: center;
+	margin: 0;
+	padding-left: 20%;
+
+
+}
+.container-map {
+	padding-left: 10%;
+	
+}
+
+.input-group {
+
+}
+.search {
+
+	height: 5%
+}
