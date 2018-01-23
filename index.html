@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Food-Map</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'/>
      <link rel="stylesheet" href="css/main.css">
   
@@ -14,7 +14,7 @@
 
   <section class="container" id="seccion-1">
     <div class="row image-row">
-     <div class="col-xs-12" id="view1">
+     <div class="col-sm-12" id="view1">
       <div class="container-title  ">
        <h1 class="title1 ">Foodmap</h1>
        </div>
@@ -22,38 +22,46 @@
    </div>
   </section>
 
-  <section class="container" id="seccion-2">
-    <div class="row section-resturant">
-      <div class="col-xs-12" id="view2">
+  <section class=" container" id="seccion-2">
+    <div class=" section-resturant">
+      <div class="col-sm-2 align-self-cente" id="view2">
         <h1 class="title2">Foodmap</h1>
       </div>
-         <div class="container-map col-xs-8 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15053.125171812695!2d-99.2065204!3d19.4002485!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1516422845076" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+         <div class="container-map col-sm-8 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15053.125171812695!2d-99.2065204!3d19.4002485!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1516422845076" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
          
-         <h2 class="title3">Comida cerca de ti</h2>
-         <div class="input-group mb-3 col-xs-1  search ">
-          <input type="text" class="form-control" placeholder="Buscar"  aria-describedby="basic-addon2">
+         <h2 class="title3 col-sm-8 col-xs-12">Comida cerca de ti</h2>
+         <div class="input-group mb-3 col-sm-1  col-xs-1search ">
+          <input type="text" class="form-control" placeholder="Buscar"  aria-describedby="basic-addon2" id="input-search">
           <div class="input-group-append ">
-            <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <button class="input-group-text" "><i class="fa fa-search" aria-hidden="true"></i></button>
+
           </div>
-          <div class="imagenes-restaurant">
-            <img class="img-fluid" src="assets/images/food-1.jpg" alt="">
-            <img class="img-fluid" src="assets/images/food-2.jpg" alt="">
+  <!-- Contenedor de los elementos que vamos a crear en el DOM -->
+           <div id="container-restaurants">
+            
           </div>
-          <div class="imagenes-restaurant">
-            <img class="img-fluid" src="assets/images/food-3.jpg" alt="">
-            <img class="img-fluid" src="assets/images/food-4.jpg" alt="">
+
+          
+          <div class="imagenes-restaurant col-md-12 col-xs-12">
+            <img class="img-fluid top-imges" src="assets/images/food-1.jpg" alt="">
+            <img class="img-fluid top-imges" src="assets/images/food-2.jpg" alt="">
           </div>
-        
+          <div class="imagenes-restaurant col-md-12 col-xs-12">
+            <img class="img-fluid bootom-images" src="assets/images/food-3.jpg" alt="">
+            <img class="img-fluid bootom-images" src="assets/images/food-4.jpg" alt="">
+          </div>
       </div>
   
   </section>
 
 
+
+
  <!-- MODAL -->
   <section>
-    <div class="modal" tabindex="-1" role="dialog">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -65,7 +73,7 @@
       <div class="modal-body">
         <h1>Tacos El Borrego Viudo</h1>
         <img class="img-fluid" src="assets/images/tacos-1.jpg" alt="">
-        <h4>Tacos´para todo Gusto</h4>
+        <h4>Tacos para todo Gusto</h4>
         <p>Avenida Siempreviva #742, Springfield</p>
         <p>Rango de Precios <br>Servicios a Domicilia</p>
       </div>
@@ -83,6 +91,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- funcionalidad archivos JS -->

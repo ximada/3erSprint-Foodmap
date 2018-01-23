@@ -1,14 +1,20 @@
 body {
-	font-family: 'Jura', sans-serif;
+	font-family: 'Kanit', sans-serif;
+}
+img {
+	width: 48%;
 }
 
-#view1 {
-	background-color: #2B2B2B;
+#seccion-1 {
+	background-color: #2B2B2B; 
 	height: 100vh;
 	width: 100%;
 
 
 }
+/* #seccion-2 {
+	display: none;
+} */
 .title1 {
 	color: #ffc107;
 	width: 100%;
@@ -27,28 +33,39 @@ body {
 }
 .title2 {
 	color: #ffc107;
-	text-align: center;
-	padding-left: 70%;
+	padding-left: 30%;
 
 }
 
 .title3 {
 	color: #ffc107;
-	text-align: center;
-	margin: 0;
-	padding-left: 20%;
+	padding-left: 20%; 
 
 
 }
 .container-map {
-	padding-left: 10%;
+	padding-left: 15%;
 	
 }
 
-.input-group {
-
-}
 .search {
 
 	height: 5%
+}
+
+/* imagenes del la segunda vista */
+.imagenes-restaurant {
+	width: 100%;
+	padding-top: 5%;
+}
+.top-images {
+
+	width: 30%;
+
+
+}
+
+.bootom-imges {
+	width: 35%;
+
 }
