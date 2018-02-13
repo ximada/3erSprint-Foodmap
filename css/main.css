@@ -25,7 +25,7 @@ img {
 }
 .section-resturant{
 	background-color: #2B2B2B;
-	height: 100vh;
+	;
 	
 }
 .fa-search {
@@ -56,16 +56,10 @@ img {
 /* imagenes del la segunda vista */
 .imagenes-restaurant {
 	width: 100%;
-	padding-top: 5%;
-}
-.top-images {
-
-	width: 30%;
-
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 1em;
+	height: auto;
 
 }
 
-.bootom-imges {
-	width: 35%;
 
-}
